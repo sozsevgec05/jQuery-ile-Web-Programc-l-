@@ -1,6 +1,7 @@
 # jQuery-ile-Web-Programciligi
 
-        ÖZET
+ Kendime Notlar ...
+ 
 1- HTML5 Hatırlatma
 2- CSS3 Hatırlatma
 3- Bootstrap Hatırlatma
