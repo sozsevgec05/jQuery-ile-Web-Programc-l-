@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>groupSelectors attributeSelector pseudoSelector</title>
+    <style>
+        /* Attributes selectors */
+    /* input[type="text"]{
+        background-color: rebeccapurple;
+    }
+
+    input[type="button"]{
+        background-color: yellow;
+    }
+    input[type="password"]{
+        background-color: red;
+    }
+
+    a[target="_blank"]{
+        font-size: 25px;
+    } */
+
+    a{
+        border: 1px solid red;
+        text-decoration: none;
+        padding: 8px 9px;
+        width: 16px;
+        margin: 12px;
+    }    
+
+    a:link{
+        color: green;
+        background-color: aquamarine;
+    }
+    
+    a:hover{
+        color: green;
+        background-color: red;
+    }
+
+    a:visited{
+        color: green;
+        /* background-color: blue; */
+    }
+
+    a:active{
+        color: green;
+        background-color: black;
+    }
+
+    p::after{
+        content: "Selahattin ÖZSEVGEÇ";
+    }
+    p::before{
+        content: "Selahattin ÖZSEVGEÇ";
+    }
+
+    </style>
+</head>
+<body>
+    <form>
+        <!-- <input type="text">
+        <input type="text">
+        <input type="button" value="button">
+        <input type="password"> -->
+<br><br><br><br><br>
+        <a href="" >Link</a>
+        <a href="">Visited</a>
+        <a href="">Hover</a>
+        <a href="" >Active</a>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>2Lorem ipsum dolor sit amet.</p>
+
+
+    </form>
+</body>
+</html>

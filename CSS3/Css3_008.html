@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font awesome googleFont opacity boxSizing link</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  
+    <style>
+        i{
+            font-size: 100px;
+            color: red;
+        }
+font-family: 'Open Sans', sans-serif;
+        p{
+            font-family: 'Open Sans', sans-serif; 
+        }
+
+        img{
+            height: 150px;
+            height: 150px;
+            opacity: 0.1;
+        }
+
+        a{
+            border: 1px solid red;
+            text-decoration: none;
+            font-size: 200%;
+            border-radius: 10%;
+
+        }
+
+        #firstAnchor{
+        color: white;
+        background-color: #0069D9;
+        }
+
+        #secondAnchor{
+            color:white ;
+        background-color: #5A6268;
+        }
+
+        #thirdAnchor{
+            color:white ;
+        background-color: #26A042;
+        }
+
+        a:hover{
+            color: white!important;
+            background-color: black!important;
+            font-size: 150%;
+        }
+
+
+        /*  width:200+10*2+20*2+2*2 = 264px*/
+        #kutu1{
+            background-color: red;
+            color: white;
+            text-align: center;
+            text-transform: lowercase;
+
+            box-sizing: content-box;
+
+            width: 150px;
+            height: 150px;
+
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid blue;
+
+        }
+
+        /*  width:200+20*2= 240px
+        200 = width + padding(10*2)+border(2*2) = 200 - 24 = 176 width
+        */
+        #kutu2{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            text-transform: lowercase;
+
+            box-sizing: border-box;
+            
+            width: 150px;
+            height: 150px;
+
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid red;
+
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <i class="fa-brands fa-github"></i>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto velit accusamus numquam, veniam saepe!</p>
+    
+    <img src="../HTML5/image/HTML5.png" alt="resim yok">
+    <div>
+    <a id="firstAnchor" href="">Link 1</a>
+    <a id="secondAnchor" href="">Link 2</a>
+    <a id="thirdAnchor" href="">Link 3</a>
+    </div>
+    <br><br><br>
+    <div id="kutu1">1.Kutu</div>
+    <div id="kutu2">2.Kutu</div>
+
+</body>
+</html>

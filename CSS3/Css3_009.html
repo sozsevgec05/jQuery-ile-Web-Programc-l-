@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition box-shadow display</title>
+    <style>
+        .ornek{
+            box-sizing: border-box;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            display: inline-block;
+            box-shadow: 10px 2px 30px 4px #001;
+            margin-left: -12px;
+            /* margin-left: 12.5px;
+            margin-top: 15px; */
+            color: white;
+            text-align: center; 
+            transition: width 3s, height 3s, background 1s, transform 3s;
+            transition-delay: 2s;
+            
+        }
+
+        .ornek:hover{
+            width: 300;
+            height: 300px;
+            /* transform: rotate(90deg); */
+            background-color: blue;
+        }
+
+        div.ornek > p{
+            font-size: 50px;
+            text-shadow: 1px 2px 3px black;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="ornek"><p>Text</p></div>
+        <div class="ornek"><p>Text</p></div>
+        <div class="ornek"><p>Text</p></div>
+        <div class="ornek"><p>Text</p></div>
+    </div>
+    
+
+</body>
+</html>

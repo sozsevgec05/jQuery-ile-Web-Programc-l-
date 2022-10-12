@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@media query tutorials</title>
+
+    <style>
+
+      div{
+        box-sizing: border-box;
+        background-color: green;
+        float: left;
+        border: 1px solid greenyellow;
+        width: 25%;
+        height: 200px;
+      }
+      @media screen and (max-width:700px){
+        .media{
+          width: 25%;
+          background-color: bisque;
+
+        }
+      }
+      @media screen and (max-width:600px){
+        .media{
+          width: 50%;
+          background-color: red;
+
+        }
+      }
+      @media screen and (max-width:500px){
+        .media{
+          width: 100%;
+          background-color: darkblue;
+
+        }
+      }
+     
+    </style>
+  </head>
+  <body>
+   
+    <div class="media" img><img src="../HTML5/image/a1.png" alt=""></div>
+    <div class="media"></div>
+    <div class="media"></div>
+    <div class="media"></div>
+    <div class="media"></div>
+
+
+  </body>
+</html>

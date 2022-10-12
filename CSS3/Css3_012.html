@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  <title>Nav Menu</title>
+
+  <style>
+    body{
+      box-sizing: border-box;
+      margin: 10;
+      padding: 0;
+    }
+
+    ul{
+      margin: 0;
+      padding: 0;
+
+    }
+    li{
+      display: inline-block;
+      background-color: black;
+      transition: background 1s;
+      box-shadow: 2px -3px 9px 1px black; 
+      padding: 25px;
+    }
+
+    li:hover{
+      background-color: bisque;
+      opacity: 0.8;
+    }
+    @media screen and (max-width:650px){
+      li{
+        background-color: darkblue; 
+        display: none;
+      }
+    }
+
+    a{
+      text-decoration: none;
+      color: yellow;
+    }
+
+    i{
+      color: yellow;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h2>Bootstrap Nav</h2>
+
+  <nav>
+    <ul>
+      <li><i class="fas fa-home"></i><a href=""> HOME</a></li>
+      <li><i class="fas fa-home"></i><a href=""> CONTACT</a></li>
+      <li><i class="fas fa-home"></i><a href=""> ABOUT</a></li>
+      <li><i class="fas fa-home"></i><a href=""> NEW</a></li>
+    </ul>
+  </nav>
+  
+</body>
+</html>

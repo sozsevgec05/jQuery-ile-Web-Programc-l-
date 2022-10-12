@@ -1,0 +1,45 @@
+h2{
+    color: orange;
+} 
+
+table thead{
+    background-color: black;
+    color: white;
+    border: none;
+    
+}
+
+table{
+    width: 100%;
+    cursor: pointer;
+    
+}
+table thead tr th{
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    text-transform: capitalize;
+}
+
+table tbody tr>td{
+    border-collapse: collapse;
+}
+tbody{
+    background-color: black;
+    color: white;
+}
+
+tr:nth-of-type(even){
+    background-color: gray;
+}
+
+tr:hover{
+    background-color: darkblue;
+}
+
+thead tr>th:nth-child(1){
+    background-color: darkgray;
+}
+tr>td:first-child{
+    background-color: darkcyan;
+}
