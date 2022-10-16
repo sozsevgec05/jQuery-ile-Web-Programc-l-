@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <style>
+        #div1{
+            width: 100%;
+            height: 400px;
+            background-color: yellow;
+        }
+
+        #div2{
+            width: 30%;
+            height: 200px;
+            background-color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="div1">
+
+        <div id="div2">
+
+        </div>
+
+    </div>
+
+    <br><br>
+    <input id="txt" type="text">
+    <br><br>
+    <button id="btn">Tıkla</button>
+    
+    
+    <script>
+        
+        $(function(){
+
+            // Mouse Events
+
+            // tek tık
+            // $('#btn').click(function(){
+
+            //     $('#div1').css('background-color','red');
+
+            // });
+
+            // çift tık
+            // $('#btn').dblclick(function(){
+
+            //     $('#div1').css('background-color','purple');
+
+            // });
+
+            // div1 alanına mouse ile geldiğinde çalışır
+            // $('#div1').mouseenter(function(){
+            //     $('#div1').css('background-color','red');
+
+            // });
+
+            // // div1 alanından mouse ile çıkıldığında çalışır
+            // $('#div1').mouseleave(function(){
+            //     $('#div1').css('background-color','green');
+            // });
+
+
+            //  // div1 alanından mouse ile çıkıldığında çalışır
+            //  $('#div1').mouseout(function(){
+            //     $('#div1').css('background-color','red');
+            // });
+
+             // div1 alanından mouse ile girildiğinde çalışır
+            //  $('#div1').mouseover(function(){
+            //     $('#div1').css('background-color','green');
+            // });
+
+
+            // div1 alanından mouse ile girildiğinde çalışır
+            // $('#div1').mouseup(function(){
+            //     $('#div1').css('background-color','green');
+            // });
+
+            //  // div1 alanından mouse ile basılı tutulduğunda çalışır
+            //  $('#div1').mousedown(function(){
+            //     $('#div1').css('background-color','red');
+            // });
+
+
+            //Keyboard Events
+
+             // txt in içine birşey yazınca çalışır
+             $('#txt').keypress(function(){
+                $('#div1').css('background-color','green');
+            });
+
+            // txt in içine birşey yazınca çalışır
+            // $('#txt').keyup(function(){
+            //     $('#div1').css('background-color','green');
+            // });
+
+            // txt in içine birşey yazınca çalışır
+            // $('#txt').keydown(function(){
+            //     $('#div1').css('background-color','green');
+            // });
+
+        });
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <style>
+        #div1{
+            width: 100%;
+            height: 200px;
+            background-color: yellowgreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div1">
+
+    </div>
+    <br><br>
+    <button id="btn">Tıkla</button>
+
+    <script>
+      
+        var obje = {
+            isim : "Selahattin",
+            soyisim : "ÖZSEVGEÇ",
+
+            degistir : function () {
+                $('#div1').css('background-color', "purple")
+              }
+        };
+
+      $(function(){
+
+        // on event
+        // $('#div1').on({
+        //     click: function(){$('#div1').css('background-color', "yellow")},
+        //     mouseenter : function(){$('#div1').css('background-color', "red")},
+        //     mouseleave :function(){$('#div1').css('background-color', "green")}
+        // });
+
+
+        // off event
+        // $('#btn').click(function () {
+        //     $('#div1').off('click');
+        //   })
+
+        // one event
+        // $('#div1').one({
+        //     click: function(){$('#div1').css('background-color', "yellow")},
+        //     mouseenter : function(){$('#div1').css('background-color', "red")},
+        //     mouseleave :function(){$('#div1').css('background-color', "green")}
+        // });
+
+        // proxy event
+        $("#btn").click($.proxy(obje, "degistir"));
+
+
+      });
+       
+        
+        
+    </script>
+
+</body>
+</html>

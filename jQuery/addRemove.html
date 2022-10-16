@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    
+    <style>
+        #div1{
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        #div2{
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div1" class="deneme">
+        <p id="p1">Paragraf 1</p>
+        <p id="p2">Paragraf 2</p>
+        <p id="p3">Paragraf 3</p>
+        <p id="p4">Paragraf 4</p>
+    </div>
+
+    <br><br>
+    
+    <div id="div2" class="deneme2">
+            <p id="p12">Paragraf 11</p>
+            <p id="p22">Paragraf 22</p>
+            <p id="p33">Paragraf 33</p>
+            <p id="p44">Paragraf 44</p>
+        </div>
+    </div>
+
+    <br><br>
+    <button onclick="yazdir()" id="btn">Tıkla</button>
+    
+    
+    <script>
+
+        // function yazdir() {
+        //     var t1 = "<p> Paragraf Yazıldı</p>";
+        //     var t2 =$("<p></p>").text("P2");
+        //     var t3 = document.createElement("p").innerHTML = "P3";
+            
+        //     $("#div1").append(t1, t2, t3);
+        // }
+
+        // function yazdir() {
+        //     var t1 = "<p> Paragraf Yazıldı</p>";
+        //     var t2 =$("<p></p>").text("P2");
+        //     var t3 = document.createElement("p").innerHTML = "P3";
+            
+        //     $("#div1").prepend(t1, t2, t3);
+        // }
+
+        
+          
+        
+
+        // add events
+        // divin en altına ekleme
+        // $(function () {  
+        //     $("#btn").click(function () {
+        //         $("#div1").append("jQuery Öğreniyorum");
+
+        //       });
+        // });
+            
+        // divin en üstüne ekleme
+        // $(function () {  
+        //     $("#btn").click(function () {
+        //         $("#div1").prepend("jQuery Öğreniyorum");
+
+        //       });
+        // });
+
+        // divden sonra ekleme
+        // $(function () {  
+        //     $("#btn").click(function () {
+        //         $("#div1").after("jQuery Öğreniyorum");
+
+        //       });
+        // });
+
+        // divden önce ekleme
+        // $(function () {  
+        //     $("#btn").click(function () {
+        //         $("#div1").before("jQuery Öğreniyorum");
+
+        //       });
+        // });
+
+        // remove events
+
+        // // divi komple siler
+        // $(function () {  
+        //     $("#btn").click(function () {
+        //         $("#div1").remove();
+
+        //       });
+        // });  
+
+        // divin içindeki elemanları komple siler
+        // $(function () {  
+        //     $("#btn").click(function () {
+        //         $("#div1").empty();
+
+        //       });
+        // });  
+
+        // divi komple siler
+        // $(function () {  
+        //     $("#btn").click(function () {
+        //         $("#div1").remove();
+
+        //       });
+        // });  
+
+        // sahip olunan tüm divleri siler
+        // $(function () {  
+        //     $("#btn").click(function () {
+        //         $("div").remove();
+
+        //       });
+        // });  
+
+        // classı deneme olan divi siler
+        // $(function () {  
+        //     $("#btn").click(function () {
+        //         $("div").remove(".deneme");
+
+        //       });
+        // });  
+        
+
+        // classı deneme2 olan divi siler
+        // $(function () {  
+        //     $("#btn").click(function () {
+        //         $("div").remove(".deneme2");
+
+        //       });
+        // });
+
+
+    </script>
+
+</body>
+</html>

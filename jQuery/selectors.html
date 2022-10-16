@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <style>
+        table{
+            border: 1px solid black; 
+        }
+        tr{
+            text-align: center;
+
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <p id="p1" class="c1">Pragraf 1 ID : p1 class: c1</p>
+        <p id="p2" class="c1">Pragraf 2 ID deneme: p2 class: c1</p>
+        <p id="p3" class="c3">Pragraf 3 ID : p3 class: c3</p>
+        <p id="p4" class="c4">Pragraf 4 ID : p4 class: c4</p>
+        
+    </div>
+
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>Ad Soyad</th>
+                <th>Yaş</th>
+                <th>Meslek</th>
+            </tr>
+            <tr>
+                <td>Ali Alioğlu</td>
+                <td>24</td>
+                <td>Kaptan</td>
+            </tr>
+            <tr>
+                <td>Halil Bilgiç</td>
+                <td>24</td>
+                <td>Mühendis</td>
+            </tr>
+            <tr>
+                <td>Ayşe Kalender</td>
+                <td>24</td>
+                <td>Öğretmen</td>
+            </tr>
+            <tr>
+                <td>İrem Sevimli</td>
+                <td>24</td>
+                <td>Doktor</td>
+            </tr>
+        </thead>
+    </table>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+    </ul>
+    <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Solidity</li>
+        <li>Rust</li>
+    </ul>
+    <ul>
+        <li>Angular</li>
+        <li>React</li>
+        <li>Vue.js</li>
+        <li>Node.js</li>
+    </ul>
+    
+    <a href="index.html" target="_blank">İndex</a>
+    <br><br>
+    <button id="btn">Tıkla</button>
+    <button id="btn">Click Me</button>
+
+    <br><br>
+    CheckBox<input type="checkbox" id="CheckBox1" checked>
+    CheckBox2<input type="checkbox" id="CheckBox2" checked>
+    CheckBox3<input type="checkbox" id="CheckBox3" checked>
+    
+    
+    <script>
+        $(function () {
+
+            $('#btn').click(function(){
+                // $('p').css('color', 'red');
+
+                // id 
+                // $('#p1').css('color', 'red');
+                // $('#p2').css('color', 'blue');
+                // $('#p3').css('color', 'yellow');
+                // $('#p4').css('color', 'green');
+
+                // class
+                // $('.c1').css('color', 'red');
+                // $('.c2').css('color', 'blue');
+                // $('.c3').css('color', 'yellow');
+                // $('.c4').css('color', 'green');
+
+                // this
+                // $(this).css('color','purple');
+
+                // *
+                // $('*').css('color','purple');
+
+                // id = p2 ve class = c1 olanı seçme
+                // $('#p2.c1').css('color','purple');
+
+                //p elementlerinden birincisi
+                // $('p:first').css('color','purple');
+
+                //p elementlerinden sonuncusu
+                // $('p:last').css('color','purple');
+
+                // ul etiketleri 
+                // $('ul').css('color','red');
+
+                // ilk ul nin içindeki ilk li seçme
+                // $('ul li:first').css('color','red');
+
+                // tüm ul lerin tüm li lerinin ilk çocuğu
+                // $('ul li:first-child').css('color','red');
+
+                // son ul nin son li si
+                // $('ul li:last').css('color','red');
+
+                // tüm ul lerin tüm li lerinin son çocuğu
+                // $('ul li:last-child').css('color','red');
+
+                // href sahip olan tüm elemanları seç
+                // $('[href]').css('color','red');
+
+                // id si olan tüm elemanları seç
+                // $('[id]').css('color','red');
+
+
+                // target'ı _blank'a eşit olanları seç
+                // $('a[target = "_blank"]').css('color','red');
+
+                 // target'ı _self'e eşit olmayanları seç
+                // $('a[target != "_self"]').css('color','red');
+
+                // tüm butonları seç
+                // $(':button').css('color','blue');
+
+                // tüm checkboxları seç
+                // $(':checked').css('width','100px');
+
+                // p taglarinin içerisinde deneme yazısı olanları seç                 
+                // $('p:contains(deneme)').css('color','red');
+
+                // p taglarinin içerisinde idsi p1 olmayanları seç    
+                // $('p:not(#p1)').css('color','red');
+
+                // p taglarinin içerisinde class'ı c1 olmayanları seç    
+                // $('p:not(.c1)').css('color','red');
+
+                // p taglarinin içerisinde deneme yazısı olmayanları seç
+                // $('p:not(":contains(deneme)")').css('color','red');
+
+                // içerisinde p bulunan divleri seç
+                // $('div:has(p)').css('color','orange');
+
+                // çoklu seçim 
+                // $('.c1, #p4, ul').css('color','orange');
+
+                // tüm tr ler
+                // $('tr').css('color','orange');
+
+                // tüm th ler
+                // $('th').css('color','red');
+
+                // tüm td ler
+                // $('td').css('color','orange');
+
+                // indexi çift olan tr ler
+                // $('tr:even').css('color','orange');
+
+                // indexi tek olan tr ler
+                $('tr:odd').css('color','orange');
+
+
+
+
+
+
+                
+
+
+                
+
+
+
+            });
+            
+
+          });
+    </script>
+
+</body>
+</html>

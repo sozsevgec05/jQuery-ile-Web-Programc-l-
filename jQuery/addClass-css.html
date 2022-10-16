@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+
+
+    <style>
+        #div1{
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .beyazYazi{
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="div1" class="deneme">
+        <p id="p1">Paragraf 1</p>
+        <p id="p2">Paragraf 2</p>
+        <p id="p3">Paragraf 3</p>
+        <!-- <p id="p4" class="red">Paragraf 4</p> -->
+    </div>
+
+    <button id="btn" >Tıkla</button>
+ 
+    <script>
+        // addclass
+        // $(function(){
+        //     $("#btn").click(function () {
+
+        //         $("#p1").addClass("red");
+
+        //     });
+        // });
+
+        // $(function(){
+        //     $("#btn").click(function () {
+
+        //         $("#p2").addClass("blue beyazYazi");
+
+        //     });
+        // });
+
+        // $(function(){
+        //     $("#btn").click(function () {
+
+        //         $("#p3").addClass("yellow beyazYazi");
+
+        //     });
+        // });
+
+        // $(function(){
+        //     $("#btn").click(function () {
+
+        //         $("#p2").addClass("blue beyazYazi");
+
+        //     });
+        // });
+
+        // $(function(){
+        //     $("#btn").click(function () {
+
+        //         $("#p4").removeClass("red");
+
+        //     });
+        // });
+
+
+        // $(function(){
+        //     $("#btn").click(function () {
+
+        //         $("#p1").toggleClass("blue");
+
+        //     });
+        // });
+
+        // $(function(){
+        //     $("#btn").click(function () {
+
+        //         $("#p4").removeAttr("class");
+
+        //     });
+        // });
+
+
+        // Css
+        // $(function(){
+        //     $("#btn").click(function () {
+
+        //         var a = $("#p1").css("color");
+        //         alert(a);
+        //     });
+        // });
+
+        $(function(){
+            $("#btn").click(function () {
+
+                $("#p1").css("color","blue");
+            });
+        });
+
+        $(function(){
+            $("#btn").click(function () {
+
+                $("#p1").css("background-color","red");
+            });
+        });
+
+        $(function(){
+            $("#btn").click(function () {
+
+                $("#p1").css("font-size","50px");  
+            });
+        });
+
+        $(function(){
+            $("#btn").click(function () {
+
+                $("#p2").css({
+                    "color":"purple",
+                    "background-color": "yellow",
+                    "font-size":"25px"
+                });  
+            });
+      
+        });    
+    </script>
+
+</body>
+</html>
