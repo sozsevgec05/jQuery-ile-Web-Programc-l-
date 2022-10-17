@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+
+    <style>
+      .deneme {
+        width: 75%;
+        height: 500px;
+        background-color: yellow;
+        padding: 10px;
+      }
+
+      #div2 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        color: black;
+        text-align: center;
+      }
+
+      #p1 {
+        position: relative;
+        top: 80px;
+        height: 20px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1" class="deneme">
+      <div id="div2">
+        Drag
+        <p id="p1"></p>
+      </div>
+    </div>
+
+    <script>
+      $(function () {
+        $("#div2").draggable({
+          // axis: "y",
+          // axis: "x",
+          axis: "both",
+          containment: "parent", // yada containment:"#div1",
+          start: function () {
+            $("#p1").html("Start");
+          },
+          stop: function () {
+            $("#p1").html("Stop");
+            $("#div1").css("background-color", "yellow");
+          },
+          drag: function () {
+            $("#div1").css("background-color", "blue");
+          },
+          cursor: "move",
+          cursorAt: { top: -5, left: -5 },
+        });
+      });
+    </script>
+  </body>
+</html>

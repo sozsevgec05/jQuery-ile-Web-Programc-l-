@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <style>
+      #div1 {
+        border: 5px solid black;
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <br /><br />
+    <button id="btn">Tıkla</button>
+
+    <script>
+      // width (yalın)  hali
+      // $(function() {
+      //     $('#btn').click(function () {
+      //         var w = $("#div1").width();
+      //         var h =$("#div1").height();
+
+      //         $("#div2").html("Genişlik: " + w + "<br/>Yükseklik: " + h);
+      //       })
+
+      //  });
+
+      // paddingler eklenmiş hali
+      //  $(function() {
+      //     $('#btn').click(function () {
+      //         var w = $("#div1").innerWidth();
+      //         var h =$("#div1").innerHeight();
+
+      //         $("#div2").html("Genişlik: " + w + "<br/>Yükseklik: " + h);
+      //       })
+
+      //  });
+
+      // height + padding + border eklenmiş hali
+      // $(function() {
+      //     $('#btn').click(function () {
+      //         var w = $("#div1").outerWidth();
+      //         var h =$("#div1").outerHeight();
+
+      //         $("#div2").html("Genişlik: " + w + "<br/>Yükseklik: " + h);
+      //       })
+
+      //  });
+
+      // height + padding + border + margin eklenmiş hali
+      // $(function() {
+      //     $('#btn').click(function () {
+      //         var w = $("#div1").outerWidth(true);
+      //         var h =$("#div1").outerHeight(true);
+
+      //         $("#div2").html("Genişlik: " + w + "<br/>Yükseklik: " + h);
+      //       })
+
+      //  });
+
+      // height + padding + border + margin eklenmiş hali
+      $(function () {
+        $("#btn").click(function () {
+          $("#div1").width(600);
+          $("#div1").height(200);
+        });
+      });
+    </script>
+  </body>
+</html>

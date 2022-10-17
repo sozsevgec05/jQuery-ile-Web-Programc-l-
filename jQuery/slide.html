@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <style>
+      .deneme {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 15px;
+        /* display: none; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1" class="deneme" style="background-color: yellowgreen"></div>
+
+    <div id="div2" class="deneme" style="background-color: yellow"></div>
+
+    <div id="div3" class="deneme" style="background-color: red"></div>
+
+    <br /><br />
+    <button id="btn1">SlideUp</button>
+    <button id="btn2">SlideDown</button>
+    <button id="btn3">SlideToggle</button>
+
+    <script>
+      $(function () {
+        // ekrandan siler
+        $("#btn1").click(function () {
+          // $("#div1").slideUp("slow");
+          // $("#div2").slideUp("fast");
+          // $("#div3").slideUp("fast");
+
+          $("#div1").slideUp(3000);
+          $("#div2").slideUp(2000);
+          $("#div3").slideUp(1000);
+
+          // işlemin yapılmasını verilen milisaniye kadar geciktirir
+          // $("#div1").delay(1000).slideUp(3000);
+          // $("#div2").delay(2000).slideUp(2000);
+          // $("#div3").delay(2500).slideUp(1000);
+        });
+        // ekrana tekrar getirir
+        $("#btn2").click(function () {
+          // $("#div1").slideDown("slow");
+          // $("#div2").slideDown("fast");
+          // $("#div3").slideDown("fast");
+
+          $("#div1").slideDown(3000);
+          $("#div2").slideDown(2000);
+          $("#div3").slideDown(1000);
+
+          // işlemin yapılmasını verilen milisaniye kadar geciktirir
+          // $("#div1").delay(1000).slideDown(3000);
+          // $("#div2").delay(2000).slideDown(2000);
+          // $("#div3").delay(2500).slideDown(1000);
+        });
+        // ekranda varsa siler, yoksa getirir
+        $("#btn3").click(function () {
+          // $("#div1").slideToggle("slow");
+          // $("#div2").slideToggle("fast");
+          // $("#div3").slideToggle("fast");
+
+          $("#div1").slideToggle(3000);
+          $("#div2").slideToggle(2000);
+          $("#div3").slideToggle(1000);
+
+          // işlemin yapılmasını verilen milisaniye kadar geciktirir
+          // $("#div1").delay(1000).slideToggle(3000);
+          //$("#div2").delay(2000).slideToggle(2000);
+          //$("#div3").delay(2500).slideToggle(1000);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+
+
+    <style>
+        .deneme{
+            width: 100%;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+      
+    </style>
+
+</head>
+
+<body>
+    <div id="div1" class="deneme" style="background-color: yellowgreen;"></div>
+
+    <div id="div2" class="deneme" style="background-color: yellow;"></div>
+
+    <div id="div3" class="deneme" style="background-color: red;"></div>
+
+    <br><br>
+    <button id="btn1">Fade Out</button>
+    <button id="btn2">Fade In</button>
+    <button id="btn3">Fade Toggle</button>
+    <button id="btn4">Fade To</button>
+
+   
+    <script>
+        $(function() { 
+            // ekrandan siler
+            $('#btn1').click(function () {
+                // $("#div1").fadeOut("slow");
+                // $("#div2").fadeOut("fast");
+                // $("#div3").fadeOut("fast");
+
+                // $("#div1").fadeOut(3000);
+                // $("#div2").fadeOut(2500);
+                // $("#div3").fadeOut(2000);
+                
+                // işlemin yapılmasını verilen milisaniye kadar geciktirir
+                $("#div1").delay(1000).fadeOut(3000);
+                $("#div2").delay(2000).fadeOut(2500);
+                $("#div3").delay(2500).fadeOut(2000);
+
+            }); 
+            // ekrana tekrar getirir
+            $('#btn2').click(function () {
+                // $("#div1").fadeIn("slow");
+                // $("#div2").fadeIn("fast");
+                // $("#div3").fadeIn("fast");
+
+                // $("#div1").fadeIn(3000);
+                // $("#div2").fadeIn(2500);
+                // $("#div3").fadeIn(2000);
+
+                // işlemin yapılmasını verilen milisaniye kadar geciktirir
+                $("#div1").delay(1000).fadeIn(3000);
+                $("#div2").delay(2000).fadeIn(2500);
+                $("#div3").delay(2500).fadeIn(2000);
+                
+            }); 
+            // ekranda varsa siler, yoksa getirir
+            $('#btn3').click(function () {
+                // $("#div1").fadeToggle("slow");
+                // $("#div2").fadeToggle("fast");
+                // $("#div3").fadeToggle("fast");
+
+                // $("#div1").fadeToggle(3000);
+                // $("#div2").fadeToggle(2500);
+                // $("#div3").fadeToggle(2000);
+
+                // işlemin yapılmasını verilen milisaniye kadar geciktirir
+                $("#div1").delay(1000).fadeToggle(3000);
+                $("#div2").delay(2000).fadeToggle(2500);
+                $("#div3").delay(2500).fadeToggle(2000);
+            }); 
+            // opaklık değerlerini verilen milisaniyede 
+            $('#btn4').click(function () {
+                // $("#div1").fadeTo(3000, 0.2);
+                // $("#div2").fadeTo(2500, 0.4);
+                // $("#div3").fadeTo(2000, 0.6);
+
+                // işlemin yapılmasını verilen milisaniye kadar geciktirir
+                $("#div1").delay(1000).fadeTo(3000, 0.2);
+                $("#div2").delay(2000).fadeTo(2500, 0.4);
+                $("#div3").delay(2500).fadeTo(2000, 0.6)
+            }); 
+
+
+        }); 
+        
+        
+        
+
+        
+       
+        
+    </script>
+
+</body>
+</html>

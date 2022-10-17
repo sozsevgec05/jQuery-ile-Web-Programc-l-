@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <style>
+      .deneme {
+        display: block;
+        border: 2px solid lightgrey;
+        color: grey;
+        padding: 5px;
+        margin: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1" class="deneme">
+      div (5.Ebeveyn) ID:#div1
+      <div id="div2" class="deneme">
+        div (4. Ebeveyn) ID:#div2
+        <ul class="deneme">
+          ul (3.Ebeveyn)
+          <li class="deneme">
+            li (2. Ebeveyn)
+            <p class="deneme">
+              p(1.Ebeveyn)
+              <span class="deneme">span</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="div3" class="deneme">
+        div ID:#div3
+        <div id="div4" class="deneme">div ID: #div4</div>
+      </div>
+
+      <h1 class="deneme">h1</h1>
+    </div>
+
+    <br /><br />
+    <button id="btn">Tıkla</button>
+
+    <script>
+      // div1 id divisionun çocuklarını seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div1").children().css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div1 id divisionun çocuklarından sadece h1 olanı seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div1").children('h1').css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div1 id divisionun çocuklarından sadece div3 olanı seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div1").children('#div3').css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div3 id divisionun çocuklarından sadece div4 olanı seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div3").children('#div4').css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div1 id elementten div4 id elementi seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div1").find('#div4').css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div1 id elementten span elementini seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div1").find('span').css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div1 id elementin içinde ki tüm div elementlerini seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div1").find('div').css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div1 elementinin altında ki tüm elementleri seçer
+      $(function () {
+        $("#btn").click(function () {
+          $("#div1").find("*").css({
+            border: "2px solid purple",
+            color: "red",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+
+    <style>
+      .deneme {
+        display: block;
+        border: 2px solid lightgrey;
+        color: grey;
+        padding: 5px;
+        margin: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1" class="deneme">
+      div (5.Ebeveyn) ID:#div1
+      <div id="div2" class="deneme">
+        div (4. Ebeveyn) ID:#div2
+        <ul class="deneme">
+          ul (3.Ebeveyn)
+          <li class="deneme">
+            li (2. Ebeveyn)
+            <p class="deneme">
+              p(1.Ebeveyn)
+              <span class="deneme">span</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="div3" class="deneme">
+        div ID:#div3
+        <div id="div4" class="deneme">div ID: #div4</div>
+      </div>
+
+      <h1 class="deneme">h1</h1>
+      <h1 class="deneme">h1</h1>
+    </div>
+
+    <br /><br />
+    <button id="btn">Tıkla</button>
+
+    <script>
+      // div2 nin kardeşlerini seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div2").siblings().css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div2 nin kardeşlerinden olan h1 olanları seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div2").siblings("h1").css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div2den sonra ki ilk kardeşi seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div2").next().css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div2den sonra ki kardeşleri seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div2").nextAll().css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div2nin div3 olan kardeşini seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div2").nextAll("#div3").css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // div2nin h1 e kadar olan kardeşlerini seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("#div2").nextUntil("h1").css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // h1 den önceki kardeşleri seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("h1").prev().css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // h1 den önceki tüm kardeşleri seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("h1").prevAll().css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // h1'in div2 kardeşini seçer
+      // $(function(){
+      //     $("#btn").click(function () {
+
+      //         $("h1").prevAll("#div2").css({
+      //             "border": "2px solid purple",
+      //             "color" : "red"
+      //         });
+      //       });
+      // });
+
+      // h1'in kendisinden önceki kardeşlerini div2'ye kadar olanları seçer
+      $(function () {
+        $("#btn").click(function () {
+          $("h1").prevUntil("#div2").css({
+            border: "2px solid purple",
+            color: "red",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
